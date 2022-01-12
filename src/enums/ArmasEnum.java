@@ -1,25 +1,32 @@
 package enums;
 
+import model.*;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public enum ArmasEnum {
-    ESPADA(1, "Espada", 10, "jogador"),
-    MACHADO(2, "Machado", 12, "jogador"),
-    MARTELO(3, "Martelo", 9, "jogador"),
-    CLAVA(4, "Clava", 11, "jogador"),
-    ARCO(5, "Arco", 11, "jogador"),
-    BESTA(6, "Besta", 13, "jogador"),
-    CAJADO(7, "Cajado", 12, "jogador"),
-    LIVRO_DE_MAGIAS(8, "Livro de Magias", 13, "jogador"),
-    ARMADILHA(9, "Armadilha", 15, "armadilha"),
-    MACHADO_DUPLO(10, "Machado Duplo", 16, "chefe");
+    ESPADA(1, "Espada", 15, new ArrayList<Class>(List.of(Guerreiro.class))),
+    MACHADO(2, "Machado", 15, new ArrayList<Class>(List.of(Guerreiro.class))),
+    MARTELO(3, "Martelo", 13, new ArrayList<Class>(List.of(Paladino.class))),
+    CLAVA(4, "Clava", 13, new ArrayList<Class>(List.of(Paladino.class))),
+    ARCO(5, "Arco", 18, new ArrayList<Class>(List.of(Arqueiro.class))),
+    BESTA(6, "Besta", 18, new ArrayList<Class>(List.of(Arqueiro.class))),
+    CAJADO(7, "Cajado", 19, new ArrayList<Class>(List.of(Mago.class))),
+    LIVRO_DE_MAGIAS(8, "Livro de Magias", 19, new ArrayList<Class>(List.of(Mago.class))),
+    ARMADILHA(9, "Armadilha", 15, new ArrayList<Class>(List.of(Armadilha.class))),
+    MACHADO_DUPLO(10, "Machado Duplo", 16, new ArrayList<Class>(List.of(Lider.class)));
 
     private int id;
     private String nome;
     private int dano;
+    private ArrayList<Class> usuariosPermitidos;
 
-    private ArmasEnum(int id, String nome, int dano) {
+    private ArmasEnum(int id, String nome, int dano, ArrayList<Class> usuariosPermitidos) {
         this.id = id;
         this.nome = nome;
         this.dano = dano;
+        this.usuariosPermitidos = usuariosPermitidos;
     }
 
     public int getId() {
