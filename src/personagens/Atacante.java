@@ -1,5 +1,5 @@
 package personagens;
 
-public interface Atacavel {
+public interface Atacante {
     public abstract void atacar(Personagem p);
 }
