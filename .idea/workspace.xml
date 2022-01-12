@@ -5,13 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49cac4fd-7f92-4214-8484-db3502ff4cb4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/enums/ClassesEnum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Alquimista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Alquimista.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Armeiro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Armeiro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BatalhaFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BatalhaFinal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/enums/ArmasEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/enums/ArmasEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/enums/MotivacoesEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/enums/MotivacoesEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/enums/SexoEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/enums/SexoEnum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Arqueiro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Arqueiro.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Guerreiro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Guerreiro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Inimigo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Inimigo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Lider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Lider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Jogador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Jogador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Mago.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Mago.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Paladino.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Paladino.java" afterDir="false" />
     </list>
@@ -24,12 +26,21 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="GitToolBoxStore">
     <option name="recentBranches">
@@ -93,7 +104,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1641941444997</updated>
-      <workItem from="1641941446111" duration="6340000" />
+      <workItem from="1641941446111" duration="7602000" />
     </task>
     <servers />
   </component>
