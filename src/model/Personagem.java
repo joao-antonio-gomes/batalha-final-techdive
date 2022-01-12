@@ -1,4 +1,4 @@
-package personagens;
+package model;
 
 abstract public class Personagem {
     private int pontosDeVida;
