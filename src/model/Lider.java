@@ -3,7 +3,9 @@ package model;
 import enums.ArmasEnum;
 
 public class Lider extends Inimigo {
-    public Lider(int pontosDeVida, int pontosDeAtaque, int pontosDeDefesa, ArmasEnum arma) {
-        super(pontosDeVida, pontosDeAtaque, pontosDeDefesa, arma);
+    private static final int pontosDeVida = 200;
+
+    public Lider() {
+        super(15, 15, ArmasEnum.MACHADO_DUPLO);
     }
 }

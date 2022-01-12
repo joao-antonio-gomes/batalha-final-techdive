@@ -2,8 +2,9 @@ package model;
 
 import enums.ArmasEnum;
 
-public class Alquimista extends Inimigo{
-    public Alquimista(int pontosDeVida, int pontosDeAtaque, int pontosDeDefesa, ArmasEnum arma) {
-        super(pontosDeVida, pontosDeAtaque, pontosDeDefesa, arma);
+public class Alquimista extends Inimigo {
+
+    public Alquimista() {
+        super(15, 10, ArmasEnum.CAJADO);
     }
 }

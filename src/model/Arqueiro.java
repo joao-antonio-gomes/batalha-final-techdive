@@ -7,6 +7,6 @@ import enums.SexoEnum;
 public class Arqueiro extends Jogador {
 
     public Arqueiro(String nome, SexoEnum sexo, MotivacoesEnum motivacao, ArmasEnum arma) {
-        super(arma.getDano(), 13, nome, sexo, motivacao, arma);
+        super(18, 13, nome, sexo, motivacao, arma);
     }
 }
