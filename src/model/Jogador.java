@@ -1,4 +1,4 @@
-package personagens;
+package model;
 
 import enums.ArmasEnum;
 import enums.MotivacoesEnum;
