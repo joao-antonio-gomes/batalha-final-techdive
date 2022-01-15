@@ -9,10 +9,10 @@ abstract public class Jogador extends Personagem implements Atacante {
     private SexoEnum sexo;
     private MotivacoesEnum motivacao;
     private ArmasEnum arma;
-    private static final int pontosDeVida = 200;
+    private static final int pontosDeVidaMaximo = 200;
 
     public Jogador(int pontosDeAtaque, int pontosDeDefesa, String nome, SexoEnum sexo, ArmasEnum arma) {
-        super(pontosDeVida, pontosDeAtaque, pontosDeDefesa);
+        super(pontosDeVidaMaximo, pontosDeAtaque, pontosDeDefesa);
         if (nome == null || nome.isEmpty()) {
             throw new IllegalArgumentException("Nome não pode ser vazio ou nulo");
         }
@@ -25,6 +25,10 @@ abstract public class Jogador extends Personagem implements Atacante {
     @Override
     public void atacar(Personagem p) {
 
+    }
+
+    public int getPontosDeVidaMaximo() {
+        return pontosDeVidaMaximo;
     }
 
     public void setMotivacao(MotivacoesEnum motivacao) {

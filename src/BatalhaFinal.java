@@ -99,35 +99,46 @@ public class BatalhaFinal {
                 + "À sua frente, só é possível perceber que você se encontra em um corredor extenso.\n"
                 + "Você só pode ir à frente, ou desistir.");
 
-        // TODO: perguntar ao jogador se o personagem segue em frente ou desiste
-        // TODO: if (desiste)
-        System.out.println("O medo invade o seu coração e você sente que ainda não está à altura do desafio.\n"
-                + "Você se volta para a noite lá fora, e corre em direção à segurança.");
-        // TODO: encerrar a execução do programa: System.exit(0);
-
+        System.out.println("Qual sua ação?");
+        System.out.println("1 - Ir à frente");
+        System.out.println("2 - Desistir");
+        int acao = scanner.nextInt();
+        if (acao == 2) {
+            System.out.println("O medo invade o seu coração e você sente que ainda não está à altura do desafio.\n"
+                    + "Você se volta para a noite lá fora, e corre em direção à segurança.");
+            System.exit(0);
+        }
         System.out.println("Você caminha, atento a todos os seus sentidos, por vários metros,\n"
                 + "até visualizar a frente uma fonte de luz, que você imagina ser a chama de uma tocha,\n"
                 + "vindo de dentro de uma porta aberta.");
 
         System.out.println("Você se pergunta se dentro dessa sala pode haver inimigos, ou alguma armadilha,\n"
                 + "e pondera sobre como passar pela porta.");
-        // TODO: perguntar ao jogador se deseja passar pela porta ANDANDO CUIDADOSAMENTE, CORRENDO ou SALTANDO.
-        // TODO: if SALTANDO
-        System.out.println("Você se concentra e pula em direção à luz, saltando de antes da porta até o interior da sala.");
-        // TODO: else if CORRENDO
-        System.out.println("Você respira fundo e desata a correr em direção à sala.\n"
-                + "Quando passa pela porta, sente que pisou em uma pedra solta,\n"
-                + "mas não dá muita importância e segue para dentro da sala, olhando ao redor à procura de inimigos.\n"
-                + "Não tem ninguém, mas você ouve sons de flechas batendo na pedra atrás de você,\n"
-                + "e quando se vira, vê várias flechas no chão.\n"
-                + "Espiando pela porta, você entende que pisou em uma armadilha que soltou flechas de uma escotilha aberta no teto,\n"
-                + "mas por sorte você entrou correndo e conseguiu escapar desse ataque surpresa.");
-        // TODO: else
-        System.out.println("Você toma cuidado e vai caminhando vagarosamente em direção à luz.\n"
-                + "Quando você pisa exatamente embaixo da porta, você sente o chão ceder levemente, como se tivesse pisado em uma pedra solta.\n"
-                + "Você ouve um ruído de mecanismos se movimentando, e uma escotilha se abre no teto atrás de você, no corredor.\n"
-                + "Flechas voam da escotilha em sua direção, e você salta para dentro da sala, porém uma delas te acerta na perna.");
-        //TODO: instanciar objeto Armadilha e invocar método de causar dano.
+
+        System.out.println("Como você deseja avançar?");
+        System.out.println("1 - Andando cuidadosamente");
+        System.out.println("2 - Correndo");
+        System.out.println("3 - Saltando");
+        acao = scanner.nextInt();
+        if (acao == 3) {
+            System.out.println("Você se concentra e pula em direção à luz, saltando de antes da porta até o interior da sala.");
+        } else if (acao == 2) {
+            System.out.println("Você respira fundo e desata a correr em direção à sala.\n"
+                    + "Quando passa pela porta, sente que pisou em uma pedra solta,\n"
+                    + "mas não dá muita importância e segue para dentro da sala, olhando ao redor à procura de inimigos.\n"
+                    + "Não tem ninguém, mas você ouve sons de flechas batendo na pedra atrás de você,\n"
+                    + "e quando se vira, vê várias flechas no chão.\n"
+                    + "Espiando pela porta, você entende que pisou em uma armadilha que soltou flechas de uma escotilha aberta no teto,\n"
+                    + "mas por sorte você entrou correndo e conseguiu escapar desse ataque surpresa.");
+        } else {
+            System.out.println("Você toma cuidado e vai caminhando vagarosamente em direção à luz.\n"
+                    + "Quando você pisa exatamente embaixo da porta, você sente o chão ceder levemente, como se tivesse pisado em uma pedra solta.\n"
+                    + "Você ouve um ruído de mecanismos se movimentando, e uma escotilha se abre no teto atrás de você, no corredor.\n"
+                    + "Flechas voam da escotilha em sua direção, e você salta para dentro da sala, porém uma delas te acerta na perna.");
+
+            Armadilha armadilha = new Armadilha();
+            armadilha.atacar(jogador);
+        }
 
         System.out.println("Você se encontra sozinho em uma sala quadrada, contendo uma porta em cada parede.\n"
                 + "Uma delas foi aquela pela qual você entrou, que estava aberta, e as outras três estão fechadas.\n"
@@ -149,20 +160,28 @@ public class BatalhaFinal {
                 + "Ali, de pé entre você e a porta fechada, bloqueando o caminho do seu destino, está um dos capitães do inimigo.\n"
                 + "Um orque horrendo, de armadura, capacete e espada em punho, em posição de combate.\n"
                 + "Ele avança em sua direção.");
-        // TODO: instanciar objeto Armeiro
+
+        Armeiro armeiro = new Armeiro();
         // TODO: iniciar loop de combate, inimigo ataca primeiro
 
         System.out.println("Após derrotar o Armeiro, você percebe que seus equipamentos estão muito danificados.\n"
                 + "Olha em volta, encarando todas aquelas peças de armaduras resistentes e em ótimo estado.");
 
-        // TODO: perguntar ao jogador se ele quer ou não pegar as armaduras novas.
-        // TODO: Se escolher pegar
-        System.out.println("Você resolve usar os equipamentos do inimigo contra ele, e trocar algumas peças suas,\n"
-                + "que estavam danificadas, pelas peças de armaduras existentes na sala.\n"
-                + "De armadura nova, você se sente mais protegido para os desafios à sua frente.");
-        // TODO: deve ser acrescentado +5 pontos de defesa para o jogador.
-        // TODO: se não
-        System.out.println("Você decide que não precisa utilizar nada que venha das mãos do inimigo.");
+        System.out.println("Você deseja pegar as armaduras novas?");
+        System.out.println("1 - Sim");
+        System.out.println("2 - Não");
+        acao = scanner.nextInt();
+
+        if (acao == 1) {
+            System.out.println("Você resolve usar os equipamentos do inimigo contra ele, e trocar algumas peças suas,\n"
+                    + "que estavam danificadas, pelas peças de armaduras existentes na sala.\n"
+                    + "De armadura nova, você se sente mais protegido para os desafios à sua frente.");
+            int pontosDeDefesa = jogador.getPontosDeDefesa();
+            pontosDeDefesa += 5;
+            jogador.setPontosDeDefesa(pontosDeDefesa);
+        } else {
+            System.out.println("Você decide que não precisa utilizar nada que venha das mãos do inimigo.");
+        }
 
         System.out.println("Em uma mesa, você encontra uma chave dourada, e sabe que aquela chave abre uma das fechaduras da porta do líder inimigo.\n"
                 + "Você pega a chave e guarda numa pequena bolsa que leva presa ao cinto.");
@@ -176,18 +195,25 @@ public class BatalhaFinal {
                 + "criando poções utilizadas pelos soldados para aterrorizar a região.");
         System.out.println("No fundo da sala, olhando em sua direção, está outro dos capitães do inimigo.\n"
                 + "Um orque horrendo, de armadura, cajado em punho, em posição de combate. Ele avança em sua direção.");
-        // TODO: instanciar objeto Alquimista
+
+        Alquimista alquimista = new Alquimista();
         // TODO: iniciar loop de combate, inimigo ataca primeiro
 
         System.out.println("Após derrotar o Alquimista, você olha em volta, tentando reconhecer alguma poção do estoque do inimigo.\n"
                 + "Em uma mesa, você reconhece uma pequena garrafa de vidro contendo um líquido levemente rosado,\n"
                 + "pega a garrafa e pondera se deve beber um gole.");
-        // TODO: perguntar ao jogador se ele quer ou não beber.
-        // TODO: Se escolher beber
-        System.out.println("Você se sente revigorado para seguir adiante!");
-        // TODO: pontos de saúde do jogador devem ser restaurados 100%
-        // TODO: se não
-        System.out.println("Você fica receoso de beber algo produzido pelo inimigo.");
+
+        System.out.println("Você deseja beber um gole da poção?");
+        System.out.println("1 - Sim");
+        System.out.println("2 - Não");
+        acao = scanner.nextInt();
+
+        if (acao == 1) {
+            System.out.println("Você se sente revigorado para seguir adiante!");
+            jogador.setPontosDeVida(jogador.getPontosDeVidaMaximo());
+        } else {
+            System.out.println("Você fica receoso de beber algo produzido pelo inimigo.");
+        }
 
         System.out.println("Ao lado da porta, você vê uma chave dourada em cima de uma mesa,\n"
                 + "e sabe que aquela chave abre a outra fechadura da porta do líder inimigo.\n"
@@ -203,13 +229,23 @@ public class BatalhaFinal {
 
         System.out.println("Ele percebe sua chegada e se levanta com um salto, apanhando seu machado de guerra de lâmina dupla.");
 
+
+        System.out.println("Você deseja atacar ou esperar?");
+        System.out.println("1 - Atacar");
+        System.out.println("2 - Esperar");
+        acao = scanner.nextInt();
+
         // TODO: jogador deve decidir se ataca ou espera
         // TODO: iniciar loop de combate, dependendo da resposta do jogador, ele ataca primeiro
 
         System.out.println("Você conseguiu!");
         // TODO: exibir mensagem de vitória de acordo com a motivação do jogador:
-        // se vingança: Você obteve sua vingança. Você se ajoelha e cai no choro, invadido por uma sensação de alívio e felicidade. Você se vingou, tudo que sempre quis, está feito. Agora você pode seguir sua vida.
-        // se glória: O êxtase em que você se encontra não cabe dentro de si. Você se ajoelha e grita de alegria. A glória o aguarda, você a conquistou.
+        if (motivacaoEscolhida == MotivacoesEnum.VINGANCA) {
+            System.out.println("Você obteve sua vingança. Você se ajoelha e cai no choro, invadido por uma sensação de alívio e felicidade. Você se vingou, tudo que sempre quis, está feito. Agora você pode seguir sua vida.");
+        } else {
+            System.out.println("O êxtase em que você se encontra não cabe dentro de si. Você se ajoelha e grita de alegria. A glória o aguarda, você a conquistou.");
+        }
+
 
         System.out.println("Você se levanta, olha para os prisioneiros, vai de um em um e os liberta,\n"
                 + "e todos vocês saem em direção à noite, retornando à cidade.\n"
