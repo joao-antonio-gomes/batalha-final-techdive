@@ -12,6 +12,15 @@ public enum MotivacoesEnum {
         this.nome = nome;
     }
 
+    public static MotivacoesEnum getMotivacao(int motivacao) {
+        for (MotivacoesEnum motivacaoEnum : MotivacoesEnum.values()) {
+            if (motivacaoEnum.getId() == motivacao) {
+                return motivacaoEnum;
+            }
+        }
+        return null;
+    }
+
     public int getId() {
         return id;
     }

@@ -1,73 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="49cac4fd-7f92-4214-8484-db3502ff4cb4" name="Changes" comment="">
+    <list default="true" id="4667426d-1faf-4678-a567-5f76053c8c3f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Alquimista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Alquimista.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Armeiro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Armeiro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Arqueiro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Arqueiro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Guerreiro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Guerreiro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Inimigo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Inimigo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Lider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Lider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Mago.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Mago.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Paladino.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Paladino.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BatalhaFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BatalhaFinal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitToolBoxStore">
-    <option name="recentBranches">
-      <RecentBranches>
-        <option name="branchesForRepo">
-          <list>
-            <RecentBranchesForRepo>
-              <option name="branches">
-                <list>
-                  <RecentBranch>
-                    <option name="branchName" value="exercicio-4" />
-                    <option name="lastUsedInstant" value="1641947961" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="exercicio-3" />
-                    <option name="lastUsedInstant" value="1641946865" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="exercicio-2" />
-                    <option name="lastUsedInstant" value="1641946339" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1641946338" />
-                  </RecentBranch>
-                </list>
-              </option>
-              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
-            </RecentBranchesForRepo>
-          </list>
-        </option>
-      </RecentBranches>
-    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="23ZV9LQItryAhAIvh7bhL6BYt18" />
+  <component name="ProjectId" id="23f2bUCtKZ70YLC41dOg07ztONv" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -76,24 +25,33 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager">
+    <configuration name="BatalhaFinal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BatalhaFinal" />
+      <module name="batalha" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.BatalhaFinal" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="49cac4fd-7f92-4214-8484-db3502ff4cb4" name="Changes" comment="" />
-      <created>1641941444997</created>
+      <changelist id="4667426d-1faf-4678-a567-5f76053c8c3f" name="Changes" comment="" />
+      <created>1642110892428</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1641941444997</updated>
-      <workItem from="1641941446111" duration="6340000" />
+      <updated>1642110892428</updated>
+      <workItem from="1642110893518" duration="84000" />
+      <workItem from="1642284850376" duration="140000" />
     </task>
     <servers />
   </component>
@@ -110,5 +68,21 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/BatalhaFinal.java</url>
+          <line>93</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/BatalhaFinal.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

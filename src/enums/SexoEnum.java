@@ -14,6 +14,15 @@ public enum SexoEnum {
         this.sigla = sigla;
     }
 
+    public static SexoEnum getSexo(int sexo) {
+        for (SexoEnum sexoEnum : SexoEnum.values()) {
+            if (sexoEnum.getId() == sexo) {
+                return sexoEnum;
+            }
+        }
+        return null;
+    }
+
     public int getId() {
         return id;
     }

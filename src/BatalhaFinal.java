@@ -1,15 +1,56 @@
+import enums.ArmasEnum;
+import enums.ClassesEnum;
+import enums.MotivacoesEnum;
+import enums.SexoEnum;
+import model.*;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class BatalhaFinal {
+    private static Scanner scanner = new Scanner(System.in);
+
     public static void main(String[] args) {
         System.out.println("Seja bem vindo(a) à BATALHA FINAL!");
-        // TODO: solicitar ao jogador um nome para o personagem.
-        // TODO: solicitar ao jogador um sexo para o personagem.
-        //       M ou F.
-        // TODO: solicitar ao jogador qual a classe do personagem.
-        //       Guerreiro, Paladino, Arqueiro, Mago.
-        // TODO: solicitar ao jogador qual arma o personagem vai usar,
-        //       dentre as opções disponíveis para a classe selecionada.
-        // TODO: instanciar um novo objeto da classe selecionada pelo jogador,
-        //       passando como argumentos os valores coletados.
+        System.out.println("Qual o seu nome?");
+        String nome = scanner.nextLine();
+        System.out.println("Qual o seu sexo?");
+        for (SexoEnum sexo : SexoEnum.values()) {
+            System.out.println(sexo.getId() + " - " + sexo.getDescricao());
+        }
+        int sexo = scanner.nextInt();
+        SexoEnum sexoEscolhido = SexoEnum.getSexo(sexo);
+
+        System.out.println("Qual a classe do seu personagem?");
+        for (ClassesEnum classe : ClassesEnum.values()) {
+            System.out.println(classe.getId() + " - " + classe.getDescricao());
+        }
+        int classe = scanner.nextInt();
+        ClassesEnum classeEscolhida = ClassesEnum.getClasse(classe);
+
+        System.out.println("Qual sua arma?");
+        ArrayList<ArmasEnum> armas = ArmasEnum.getArmasByClasse(classeEscolhida);
+        for (ArmasEnum arma : armas) {
+            System.out.println(arma.getId() + " - " + arma.getNome());
+        }
+        int arma = scanner.nextInt();
+        ArmasEnum armaEscolhida = ArmasEnum.getArma(arma);
+
+        Jogador jogador = null;
+        switch (classeEscolhida) {
+            case GUERREIRO:
+                jogador = new Guerreiro(nome, sexoEscolhido, armaEscolhida);
+                break;
+            case ARQUEIRO:
+                jogador = new Arqueiro(nome, sexoEscolhido, armaEscolhida);
+                break;
+            case MAGO:
+                jogador = new Mago(nome, sexoEscolhido, armaEscolhida);
+                break;
+            case PALADINO:
+                jogador = new Paladino(nome, sexoEscolhido, armaEscolhida);
+                break;
+        }
 
         System.out.println("A noite se aproxima, a lua já surge no céu, estrelas vão se acendendo,\n"
                 + "e sob a luz do crepúsculo você está prestes a entrar na fase final da sua missão.\n"
@@ -22,28 +63,33 @@ public class BatalhaFinal {
 
         System.out.println("Buscando uma injeção de ânimo, você se força a lembrar o que te trouxe até aqui.");
 
-        // TODO: pedir ao jogador para escolher a motivação do seu personagem.
-        //       por que o personagem está nessa missão de destruir os inimigos?
-        //       Vingança ou Glória?
+        System.out.println("Qual sua motivação?");
+        for (MotivacoesEnum motivacao : MotivacoesEnum.values()) {
+            System.out.println(motivacao.getId() + " - " + motivacao.getNome());
+        }
+        int motivacao = scanner.nextInt();
+        MotivacoesEnum motivacaoEscolhida = MotivacoesEnum.getMotivacao(motivacao);
+        jogador.setMotivacao(motivacaoEscolhida);
 
-        // TODO: if (motivação do jogador == VINGANÇA)
-        System.out.println("Imagens daquela noite trágica invadem sua mente.\n"
-                + "Você nem precisa se esforçar para lembrar, pois essas memórias estão sempre presentes,\n"
-                + "mesmo que de pano de fundo, quando você tem outros pensamentos em foco, elas nunca o deixaram.\n"
-                + "Elas são o combustível que te fizeram chegar até aqui.\n"
-                + "E você sabe que não irá desistir até ter vingado a morte\n"
-                + "daqueles que foram - e pra sempre serão - sua fonte de amor e desejo de continuar vivo.\n"
-                + "O maldito líder finalmente pagará por tanto mal causado na vida de tantos\n"
-                + "(e principalmente na sua).");
-        // TODO else
-        System.out.println("Você já consegue visualizar na sua mente o povo da cidade te recebendo de braços abertos,\n"
-                + "bardos criando canções sobre seus feitos heróicos, nobres te presenteando com jóias e diversas riquezas,\n"
-                + "taberneiros se recusando a cobrar por suas bebedeiras e comilanças.\n"
-                + "Desde já, você sente o amor do público, te louvando a cada passo que dá pelas ruas,\n"
-                + "depois de destruir o vilão que tanto assombrou a paz de todos.\n"
-                + "Porém, você sabe que ainda falta o último ato dessa história.\n"
-                + "Você se concentra na missão.\n"
-                + "A glória o aguarda, mas não antes da última batalha.");
+        if (motivacaoEscolhida == MotivacoesEnum.VINGANCA) {
+            System.out.println("Imagens daquela noite trágica invadem sua mente.\n"
+                    + "Você nem precisa se esforçar para lembrar, pois essas memórias estão sempre presentes,\n"
+                    + "mesmo que de pano de fundo, quando você tem outros pensamentos em foco, elas nunca o deixaram.\n"
+                    + "Elas são o combustível que te fizeram chegar até aqui.\n"
+                    + "E você sabe que não irá desistir até ter vingado a morte\n"
+                    + "daqueles que foram - e pra sempre serão - sua fonte de amor e desejo de continuar vivo.\n"
+                    + "O maldito líder finalmente pagará por tanto mal causado na vida de tantos\n"
+                    + "(e principalmente na sua).");
+        } else {
+            System.out.println("Você já consegue visualizar na sua mente o povo da cidade te recebendo de braços abertos,\n"
+                    + "bardos criando canções sobre seus feitos heróicos, nobres te presenteando com jóias e diversas riquezas,\n"
+                    + "taberneiros se recusando a cobrar por suas bebedeiras e comilanças.\n"
+                    + "Desde já, você sente o amor do público, te louvando a cada passo que dá pelas ruas,\n"
+                    + "depois de destruir o vilão que tanto assombrou a paz de todos.\n"
+                    + "Porém, você sabe que ainda falta o último ato dessa história.\n"
+                    + "Você se concentra na missão.\n"
+                    + "A glória o aguarda, mas não antes da última batalha.");
+        }
 
         System.out.println("Inspirado pelo motivo que te trouxe até aqui, você sente seu coração ardendo em chamas,\n"
                 + "suas mãos formigarem em volta da sua arma. Você a segura com firmeza. Seu foco está renovado.\n"
