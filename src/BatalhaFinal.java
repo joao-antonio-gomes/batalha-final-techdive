@@ -40,6 +40,7 @@ public class BatalhaFinal {
         switch (classeEscolhida) {
             case GUERREIRO:
                 jogador = new Guerreiro(nome, sexoEscolhido, armaEscolhida);
+                break;
             case ARQUEIRO:
                 jogador = new Arqueiro(nome, sexoEscolhido, armaEscolhida);
                 break;
