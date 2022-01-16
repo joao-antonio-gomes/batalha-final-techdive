@@ -23,15 +23,38 @@ public class Combate {
     public void combate() {
         boolean jogadorComecaPrimeiro = jogadorComecaPrimeiro();
         jogadorComecaPrimeiro = this.primeiroAtacante instanceof Jogador;
+        System.out.println();
+        System.out.println("INICIO DO COMBATE");
+        System.out.println((jogadorComecaPrimeiro ? "Jogador" : "Inimigo") + " começa primeiro");
+        System.out.println();
+        pressioneEnterParaContinuar();
         do {
             if (jogadorComecaPrimeiro) {
+                System.out.println();
+                System.out.println("Seu turno!");
+                System.out.println();
                 acoesJogadorCombate();
+                System.out.println();
+                System.out.println("O inimigo vai atacar agora!");
+                System.out.println();
                 acoesInimigoCombate();
             } else {
+                System.out.println();
+                System.out.println("O inimigo vai atacar agora!");
+                System.out.println();
                 acoesInimigoCombate();
+                System.out.println();
+                System.out.println("Seu turno!");
+                System.out.println();
                 acoesJogadorCombate();
             }
         } while (jogador.getPontosDeVida() > 0 && inimigo.getPontosDeVida() > 0);
+    }
+
+    private void pressioneEnterParaContinuar() {
+        System.out.println("Pressione ENTER para continuar");
+        Scanner scanner = new Scanner(System.in);
+        scanner.nextLine();
     }
 
     private boolean jogadorComecaPrimeiro() {
