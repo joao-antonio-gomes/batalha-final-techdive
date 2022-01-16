@@ -5,15 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4667426d-1faf-4678-a567-5f76053c8c3f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/batalha/BatalhaFinal$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/batalha/BatalhaFinal$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/batalha/BatalhaFinal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/batalha/BatalhaFinal.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/batalha/model/Combate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/batalha/model/Combate.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/batalha/model/Inimigo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/batalha/model/Inimigo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/batalha/model/Jogador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/batalha/model/Jogador.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BatalhaFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BatalhaFinal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Combate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Combate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Inimigo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Inimigo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Jogador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Jogador.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +47,10 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
+                    <option name="branchName" value="refatoracao-textos" />
+                    <option name="lastUsedInstant" value="1642374764" />
+                  </RecentBranch>
+                  <RecentBranch>
                     <option name="branchName" value="exercicio-9" />
                     <option name="lastUsedInstant" value="1642286643" />
                   </RecentBranch>
@@ -61,10 +65,6 @@
                   <RecentBranch>
                     <option name="branchName" value="main" />
                     <option name="lastUsedInstant" value="1642285114" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="exercicio-4" />
-                    <option name="lastUsedInstant" value="1642285113" />
                   </RecentBranch>
                 </list>
               </option>
@@ -87,6 +87,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -133,7 +134,7 @@
       <updated>1642110892428</updated>
       <workItem from="1642110893518" duration="84000" />
       <workItem from="1642284850376" duration="140000" />
-      <workItem from="1642370749402" duration="3817000" />
+      <workItem from="1642370749402" duration="5527000" />
     </task>
     <servers />
   </component>
@@ -156,7 +157,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/BatalhaFinal.java</url>
-          <line>93</line>
+          <line>140</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

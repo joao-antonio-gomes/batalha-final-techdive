@@ -39,11 +39,15 @@ abstract public class Inimigo extends Personagem implements Atacante {
         int pontosDeVidaFinal;
         if (danoDado == 20) {
             System.out.println("O inimigo acertou um ataque crítico!");
-            pontosDeVidaFinal = pontosDeVida - (danoTotal * 2);
+
+            pontosDeVidaFinal = pontosDeVida - danoTotal;
             defensor.setPontosDeVida(pontosDeVidaFinal);
         } else {
-            int danoFinal = danoTotal - pontosDeDefesa;
-            pontosDeVidaFinal = pontosDeVida - danoFinal;
+            danoTotal = danoTotal - pontosDeDefesa;
+            if (danoTotal < 0) {
+                danoTotal = 0;
+            }
+            pontosDeVidaFinal = pontosDeVida - danoTotal;
             defensor.setPontosDeVida(pontosDeVidaFinal);
         }
 
