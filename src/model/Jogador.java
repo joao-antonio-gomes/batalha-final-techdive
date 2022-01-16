@@ -36,6 +36,7 @@ abstract public class Jogador extends Personagem implements Atacante {
         int pontosDeVida = defensor.getPontosDeVida();
 
         if (danoDado == 1) {
+            System.out.println("ERRRRRRRRROU!!!");
             List<String> frasesErro = List.of(
                     "Não foi dessa vez",
                     "Você errou seu ataque por muito!",
@@ -46,6 +47,7 @@ abstract public class Jogador extends Personagem implements Atacante {
         }
 
         if (danoDado == 20) {
+            System.out.println("Um ataque crítico!");
             List<String> frasesErro = List.of(
                     "Você sente uma força preencher você e consegue acertar um golpe super poderoso!",
                     "Você acertou um golpe muito forte e seu inimigo pareceu ficar confuso!"
@@ -61,14 +63,32 @@ abstract public class Jogador extends Personagem implements Atacante {
 
         boolean defensorEstaVivo = defensor.getPontosDeVida() > 0;
 
-        System.out.println("Seu ataque causou " + danoTotal + " de dano!");
+        List<ArmasEnum> armasCurtas = List.of(ArmasEnum.ESPADA, ArmasEnum.MACHADO, ArmasEnum.MARTELO, ArmasEnum.CLAVA);
+        List<ArmasEnum> armasLongas = List.of(ArmasEnum.BESTA, ArmasEnum.ARCO);
+        String frase;
+        if (armasCurtas.contains(arma)) {
+            frase = "Você atacou com sua " + arma.getNome();
+        } else if (armasLongas.contains(arma)) {
+            if (arma == ArmasEnum.ARCO) {
+                frase = "Você atacou com seu arco e flecha";
+            } else {
+                frase = "Você atacou com sua besta e virote";
+            }
+        } else if (arma == ArmasEnum.CAJADO) {
+            frase = "Você atacou com seu cajado, lançando uma bola de fogo";
+        } else {
+            frase = "Você absorveu a energia do seu livro mágico com uma de suas mãos e soltou pela outra";
+        }
+
+        frase += " e causou " + danoTotal + " de dano!";
+        System.out.println(frase);
 
         if (defensorEstaVivo) {
             System.out.println("O inimigo ainda está vivo!");
             return;
         }
 
-        System.out.println("O inimigo morreu!");
+        System.out.println("O inimigo não é páreo para o seu heroísmo, e jaz imóvel aos seus pés.");
     }
 
     public int getPontosDeVidaMaximo() {
@@ -77,5 +97,18 @@ abstract public class Jogador extends Personagem implements Atacante {
 
     public void setMotivacao(MotivacoesEnum motivacao) {
         this.motivacao = motivacao;
+    }
+
+    public void fugir() {
+        System.out.println("Você não estava preparado para a força do inimigo, e decide fugir para que possa tentar novamente em uma próxima vez.");
+        System.exit(0);
+    }
+
+    public MotivacoesEnum getMotivacao() {
+        return motivacao;
+    }
+
+    public SexoEnum getSexo() {
+        return sexo;
     }
 }

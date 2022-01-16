@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4667426d-1faf-4678-a567-5f76053c8c3f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/model/Combate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/Testes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/batalha/BatalhaFinal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/batalha/BatalhaFinal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/batalha/model/Armadilha.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/batalha/model/Armadilha.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/batalha/model/Combate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/batalha/model/Combate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/batalha/model/Inimigo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/batalha/model/Inimigo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/batalha/model/Jogador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/batalha/model/Jogador.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/batalha/model/Personagem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/batalha/model/Personagem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BatalhaFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BatalhaFinal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Combate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Combate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Inimigo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Inimigo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Jogador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Jogador.java" afterDir="false" />
     </list>
@@ -93,8 +93,9 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.Testes">
+  <component name="RunManager" selected="Application.BatalhaFinal">
     <configuration name="BatalhaFinal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BatalhaFinal" />
       <module name="batalha" />
@@ -117,8 +118,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Testes" />
         <item itemvalue="Application.BatalhaFinal" />
+        <item itemvalue="Application.Testes" />
       </list>
     </recent_temporary>
   </component>
@@ -132,7 +133,7 @@
       <updated>1642110892428</updated>
       <workItem from="1642110893518" duration="84000" />
       <workItem from="1642284850376" duration="140000" />
-      <workItem from="1642370749402" duration="1760000" />
+      <workItem from="1642370749402" duration="3817000" />
     </task>
     <servers />
   </component>
@@ -157,11 +158,6 @@
           <url>file://$PROJECT_DIR$/src/BatalhaFinal.java</url>
           <line>93</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/BatalhaFinal.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

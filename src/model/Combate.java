@@ -2,6 +2,8 @@ package model;
 
 import utils.Dado;
 
+import java.util.Scanner;
+
 public class Combate {
     private Jogador jogador;
     private Inimigo inimigo;
@@ -39,10 +41,19 @@ public class Combate {
     }
 
     public void acoesJogadorCombate() {
-
+        System.out.println("Escolha uma ação: ");
+        System.out.println("1 - Atacar");
+        System.out.println("2 - Fugir");
+        Scanner scanner = new Scanner(System.in);
+        int escolha = scanner.nextInt();
+        if (escolha == 1) {
+            jogador.atacar(inimigo);
+        } else {
+            jogador.fugir();
+        }
     }
 
     public void acoesInimigoCombate() {
-
+        inimigo.atacar(jogador);
     }
 }
